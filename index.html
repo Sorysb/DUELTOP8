@@ -1,18 +1,354 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>DUELTOP8 BR</title>
-  </head>
-  <body>
- body {
-background-image: url(‘logoduel.jpeg’);
 
+	<!DOCTYPE HTML>
+	<html lang="pt-br">
+	
+<head>
+<title>MTG Decks Database</title>
+<link rel="icon" type="image/png" href="logoduel.jpeg">
+<link href="/styles.css" rel="stylesheet" type="text/css">
+
+
+
+
+<script>
+
+var x
+var y
+
+function MAJCoords(evt){
+	x=evt.clientX
+	y=evt.clientY
+	return false;	
 }
-    <h1>Olá Mundo!</h1></br>
-    <P> Site responsivo </P></br>
-   <P> Com a lista de todos os torneios e rank de comandantes usados </P></br>
-   <P> Torneios que o player participou </P></br>
-   <H2> Ban Rafine  </H2></br>
-  </body>
-</html>
+
+
+function AffOther(pref){
+	odel=document.getElementById("other_div");
+	var r = odel.getBoundingClientRect();
+
+	if (document.documentElement && document.documentElement.scrollTop) {theTop = document.documentElement.scrollTop;}
+	else if (document.body) {theTop = document.body.scrollTop;}
+	
+	if(document.getElementById("other_tooltip").style.visibility=="visible"){
+		document.getElementById("other_tooltip").style.visibility="hidden";
+	}
+	else {
+		document.getElementById("other_tooltip").style.width=(r.right-r.left+80)+"px";
+		document.getElementById("other_tooltip").style.left=(r.left-40)+"px";
+		document.getElementById("other_tooltip").style.top=(theTop+r.top+30)+"px";
+		document.getElementById("other_tooltip").style.visibility="visible";
+	}
+	
+}
+
+function EffOther(){document.getElementById('other_tooltip').style.visibility="hidden";}
+
+function AffMTGA(pref){
+	odel=document.getElementById("mtga_div");
+	var r = odel.getBoundingClientRect();
+
+	if (document.documentElement && document.documentElement.scrollTop) {theTop = document.documentElement.scrollTop;}
+	else if (document.body) {theTop = document.body.scrollTop;}
+	
+	if(document.getElementById("mtga_tooltip").style.visibility=="visible"){
+		document.getElementById("mtga_tooltip").style.visibility="hidden";
+	}
+	else {
+		document.getElementById("mtga_tooltip").style.width=(r.right-r.left+80)+"px";
+		document.getElementById("mtga_tooltip").style.left=(r.left-40)+"px";
+		document.getElementById("mtga_tooltip").style.top=(theTop+r.top+30)+"px";
+		document.getElementById("mtga_tooltip").style.visibility="visible";
+	}
+	
+}
+
+function EffMTGA(){document.getElementById("mtga_tooltip").style.visibility="hidden";}
+
+</script>
+</head>
+	<body >
+	<div align=center class=page>
+	<div style="max-width:1280px;" valign=top>
+<div id=other_tooltip style="visibility:hidden;width:200px;z-index:10;position: absolute;box-shadow: 0px 10px 10px #666666;padding:2px;background:white;border: 1px white solid;">
+
+	<div id=other_tooltip_content style="padding:3px;" align=center>
+	<div style="padding-bottom:15px;"><div  style="position:relative;"><a class=menu_item href=/format?f=PEA>PEASANT</a></div></div>
+	<div style="padding-bottom:15px;"><div  style="position:relative;"><a class=menu_item href=/format?f=BL>BLOCK</a></div></div>
+	<div style="padding-bottom:15px;"><div  style="position:relative;"><a class=menu_item href=/format?f=EX>EXTENDED</a></div></div>
+	<div style="padding-bottom:15px;"><div  style="position:relative;"><a class=menu_item href=/format?f=HIGH>HIGHLANDER</a></div></div>
+	<div style="padding-bottom:15px;"><div  style="position:relative;"><a class=menu_item href=/format?f=CHL>CANADIAN HIGHLANDER</a></div></div>
+	<div onclick="EffOther();" style="cursor:pointer;" class=S12>close</div>
+	</div>
+
+</div>
+<div id=mtga_tooltip style="visibility:hidden;width:200px;z-index:10;position: absolute;box-shadow: 0px 10px 10px #666666;padding:2px;background:white;border: 1px white solid;">
+
+	<div id=mtga_tooltip_content style="padding:3px;" align=center>
+	<div style="padding-bottom:15px;"><div  style="position:relative;"><a class=menu_item href=/format?f=EXP>EXPLORER</a></div></div>
+	<div style="padding-bottom:15px;"><div  style="position:relative;"><a class=menu_item href=/format?f=HI>HISTORIC</a></div></div>
+	<div style="padding-bottom:15px;"><div  style="position:relative;"><a class=menu_item href=/format?f=ALCH>ALCHEMY</a></div></div>
+	<div onclick="EffMTGA();" style="cursor:pointer;" class=S12>close</div>
+	</div>
+
+</div>
+<div style="border:1px:black solid;display:flex;justify-content:space-evenly;align-items:center;flex-wrap:wrap;">
+  <div>
+    <div><a href=/index><img style="width:250px;" src=/graph/title.png></a></div>
+    <div class=G16 style="margin-top:5px;">netdecking with the stars</div>
+  </div> 	
+    </td>
+    <div>
+      <div style="width:728px;height:90px;overflow:hidden;"></div></td>
+  </div>
+</div>
+
+<div style="position:relative;">
+<div style="margin:5px 0px 5px 0px;display:flex;justify-content:space-evenly;align-items:center;">
+<div  style="position:relative;width:160px;"><a class=menu_item href=/format?f=ST>STANDARD</a></div><div  style="position:relative;width:160px;"><a class=menu_item href=/format?f=PI>PIONEER</a></div><div  style="position:relative;width:160px;"><a class=menu_item href=/format?f=MO>MODERN</a></div><div  style="position:relative;width:160px;"><a class=menu_item href=/format?f=LE>LEGACY</a></div><div  style="position:relative;width:160px;"><a class=menu_item href=/format?f=VI>VINTAGE</a></div><div id=mtga_div onclick="AffMTGA('');" style="cursor:pointer;width:160px;"><a class=menu_item>MTG <img src=/graph/online/mtga.png>rena</a></div><div  style="position:relative;width:160px;"><a class=menu_item href=search>SEARCH</a></div>
+</div>
+<div style="margin:0px 0px 5px 0px;display:flex;justify-content:space-evenly;align-items:center;">
+<div  style="position:relative;width:160px;"><a class=menu_item href=/format?f=PAU>PAUPER</a></div><div  style="position:relative;width:160px;"><a class=menu_item href=/format?f=cEDH>cEDH</a></div><div  style="position:relative;width:160px;"><a class=menu_item_14 href=/format?f=EDH>DUEL COMMANDER</a></div><div  style="position:relative;width:160px;"><a class=menu_item href=/format?f=PREM>PREMODERN</a></div><div  style="position:relative;width:160px;"><a class=menu_item href=format_limited>LIMITED</a><img style="display:inline-block;height:20px;vertical-align:-15%;" src=/graph/symbols/lci-c.png></div><div id=other_div onclick="AffOther('');" style="cursor:pointer;width:160px;"><a class=menu_item>OTHER</a></div><div  style="position:relative;width:160px;"><a class=menu_item href=submit>SUBMIT</a></div>
+</div>
+<div style="position:absolute;top:8px;right:180px;display:block;"><img src=/graph/star.png></div><div style="position:absolute;top:37px;right:180px;display:block;"><img src=/graph/star.png></div>
+</div>
+<table border=0 width=100% align=center cellpadding=0 cellspacing=0>
+  <tr>
+  <td width=60% align=center valign=top>
+<div class=w_title>LAST MAJOR EVENTS<div class=c_tl></div><div class=c_tr></div><div class=c_bl></div><div class=c_br></div></div>
+<table border=0 cellpadding=0 cellspacing=0 style="width:98%;margin-bottom:20px;">
+  
+	<tr height=30 class=hover_tr>
+	  <td width=13% align=center><b>Legacy</b></td>
+	  <td width=5% align=center><img src=/graph/online/mtgo.png height=14></td>
+	  <td width=64% class=S14><a href=event?e=49837&f=LE>MTGO Showcase Challenge</a> <span class=new>NEW</span></td>
+	  <td width=9% class=O16 align=center><img src=/graph/star.png><img src=/graph/star.png><img src=/graph/star.png></td>
+	  <td align=right width=9% class=S12>26/11/23</td>
+	</tr>
+	<tr height=30 class=hover_tr>
+	  <td width=13% align=center><b>Vintage</b></td>
+	  <td width=5% align=center><img src=/graph/online/paper.png height=17></td>
+	  <td width=64% class=S14><a href=event?e=49861&f=VI>2023 Asia Championship</a> @ <a class=und href=event?e=49861&f=VI>Big Magic (Japan)</a> <span class=new>NEW</span></td>
+	  <td width=9% class=O16 align=center><img src=/graph/bigstar.png height=20></td>
+	  <td align=right width=9% class=S12>26/11/23</td>
+	</tr>
+	<tr height=30 class=hover_tr>
+	  <td width=13% align=center><b>Duel Commander</b></td>
+	  <td width=5% align=center><img src=/graph/online/paper.png height=17></td>
+	  <td width=64% class=S14><a href=event?e=49869&f=EDH>Meule de Savoie</a> @ <a class=und href=event?e=49869&f=EDH>Chambéry (France)</a> <span class=new>NEW</span></td>
+	  <td width=9% class=O16 align=center><img src=/graph/star.png><img src=/graph/star.png><img src=/graph/star.png></td>
+	  <td align=right width=9% class=S12>26/11/23</td>
+	</tr>
+	<tr height=30 class=hover_tr>
+	  <td width=13% align=center><b>Standard</b></td>
+	  <td width=5% align=center><img src=/graph/online/mtgo.png height=14></td>
+	  <td width=64% class=S14><a href=event?e=49808&f=ST>MTGO Showcase Challenge</a></td>
+	  <td width=9% class=O16 align=center><img src=/graph/star.png><img src=/graph/star.png><img src=/graph/star.png></td>
+	  <td align=right width=9% class=S12>25/11/23</td>
+	</tr>
+	<tr height=30 class=hover_tr>
+	  <td width=13% align=center><b>Standard</b></td>
+	  <td width=5% align=center><img src=/graph/online/paper.png height=17></td>
+	  <td width=64% class=S14><a href=event?e=49833&f=ST>Players Convention Aichi 2023 Open</a> @ <a class=und href=event?e=49833&f=ST>Big Magic (Japan)</a> <span class=new>NEW</span></td>
+	  <td width=9% class=O16 align=center><img src=/graph/star.png><img src=/graph/star.png><img src=/graph/star.png></td>
+	  <td align=right width=9% class=S12>25/11/23</td>
+	</tr>
+	<tr height=30 class=hover_tr>
+	  <td width=13% align=center><b>Duel Commander</b></td>
+	  <td width=5% align=center><img src=/graph/online/paper.png height=17></td>
+	  <td width=64% class=S14><a href=event?e=49851&f=EDH>25. Cerny Rytir PDC</a> @ <a class=und href=event?e=49851&f=EDH>Prague (Czech Republic)</a> <span class=new>NEW</span></td>
+	  <td width=9% class=O16 align=center><img src=/graph/star.png><img src=/graph/star.png><img src=/graph/star.png></td>
+	  <td align=right width=9% class=S12>25/11/23</td>
+	</tr>
+	<tr height=30 class=hover_tr>
+	  <td width=13% align=center><b>Modern</b></td>
+	  <td width=5% align=center><img src=/graph/online/paper.png height=17></td>
+	  <td width=64% class=S14><a href=event?e=49857&f=MO>$10,000 Showdown</a> @ <a class=und href=event?e=49857&f=MO>NRG Series (Madison, Wisconsin)</a> <span class=new>NEW</span></td>
+	  <td width=9% class=O16 align=center><img src=/graph/star.png><img src=/graph/star.png><img src=/graph/star.png></td>
+	  <td align=right width=9% class=S12>25/11/23</td>
+	</tr>
+	<tr height=30 class=hover_tr>
+	  <td width=13% align=center><b>Legacy</b></td>
+	  <td width=5% align=center><img src=/graph/online/paper.png height=17></td>
+	  <td width=64% class=S14><a href=event?e=49805&f=LE>2023 Asia Legacy Championship</a> @ <a class=und href=event?e=49805&f=LE>Big Magic (Japan)</a></td>
+	  <td width=9% class=O16 align=center><img src=/graph/bigstar.png height=20></td>
+	  <td align=right width=9% class=S12>24/11/23</td>
+	</tr>
+	<tr height=30 class=hover_tr>
+	  <td width=13% align=center><b>Modern</b></td>
+	  <td width=5% align=center><img src=/graph/online/paper.png height=17></td>
+	  <td width=64% class=S14><a href=event?e=49643&f=MO>Eternal Weekend Europe - Main Event</a> @ <a class=und href=event?e=49643&f=MO>J.K. Entertainment GmbH (Praha, Czech Republic)</a></td>
+	  <td width=9% class=O16 align=center><img src=/graph/star.png><img src=/graph/star.png><img src=/graph/star.png></td>
+	  <td align=right width=9% class=S12>19/11/23</td>
+	</tr>
+	<tr height=30 class=hover_tr>
+	  <td width=13% align=center><b>Vintage</b></td>
+	  <td width=5% align=center><img src=/graph/online/paper.png height=17></td>
+	  <td width=64% class=S14><a href=event?e=49652&f=VI>Eternal Weekend Europe 2023 Main Event</a> @ <a class=und href=event?e=49652&f=VI>J.K. Entertainment GmbH (Praha, Czech Republic)</a></td>
+	  <td width=9% class=O16 align=center><img src=/graph/star.png><img src=/graph/star.png><img src=/graph/star.png></td>
+	  <td align=right width=9% class=S12>19/11/23</td>
+	</tr>
+</table>
+<div class=w_title>LAST ROGUE DECKS<div class=c_tl></div><div class=c_tr></div><div class=c_bl></div><div class=c_br></div></div>
+<table border=0 cellpadding=0 cellspacing=0 style="width:98%;margin-bottom:20px;">
+  <div style="display:flex;flex-wrap:wrap;justify-content:space-around;">
+	<div>
+	<div style="margin-top:5px;"><b>Legacy</b> <a href=event?e=49211&d=567225&f=LE>Mono Blue Faeries</a></div>
+	<div style="height:150px;overflow:hidden;"><a href=event?e=49211&d=567225&f=LE><img src=deckpics/567225_th.jpg style="display:block;width:230px;"></a></div>
+	</div>
+	<div>
+	<div style="margin-top:5px;"><b>Pioneer</b> <a href=event?e=49213&d=566161&f=PI>Geological Appraiser</a></div>
+	<div style="height:150px;overflow:hidden;"><a href=event?e=49213&d=566161&f=PI><img src=deckpics/566161_th.jpg style="display:block;width:230px;"></a></div>
+	</div>
+	<div>
+	<div style="margin-top:5px;"><b>Pioneer</b> <a href=event?e=49213&d=565640&f=PI>Amalia Walker</a></div>
+	<div style="height:150px;overflow:hidden;"><a href=event?e=49213&d=565640&f=PI><img src=deckpics/565640_th.jpg style="display:block;width:230px;"></a></div>
+	</div>
+	<div>
+	<div style="margin-top:5px;"><b>Legacy</b> <a href=event?e=49211&d=564533&f=LE>Infect Storm</a></div>
+	<div style="height:150px;overflow:hidden;"><a href=event?e=49211&d=564533&f=LE><img src=deckpics/564533_th.jpg style="display:block;width:230px;"></a></div>
+	</div>
+	<div>
+	<div style="margin-top:5px;"><b>Modern</b> <a href=event?e=49212&d=563840&f=MO>Timeless Amulet</a></div>
+	<div style="height:150px;overflow:hidden;"><a href=event?e=49212&d=563840&f=MO><img src=deckpics/563840_th.jpg style="display:block;width:230px;"></a></div>
+	</div>
+	<div>
+	<div style="margin-top:5px;"><b>Pioneer</b> <a href=event?e=49213&d=563669&f=PI>UW Karn Control</a></div>
+	<div style="height:150px;overflow:hidden;"><a href=event?e=49213&d=563669&f=PI><img src=deckpics/563669_th.jpg style="display:block;width:230px;"></a></div>
+	</div></div>
+</table>
+<div class=G14 style="padding:40px;">
+<div class=G20>On the last seven days, <span class=L20>mtgtop8.com</span> updated its database<br>with <span class=L20>2049</span> decks that performed in <span class=L20>207</span>  events worldwide.</div><br>
+Now say you didn't know.
+</div></td>
+  <td width=40% valign=top>
+	<div style="margin:5px;">
+	<table width=100% border=0 cellpadding=0 cellspacing=0>
+	  <tr>
+	    <td align=center><a href=spoiler?set=430><img src=https://www.mtgpics.com/graph/sets/logos/lci.png></a></td>
+	    <td align=center><div style="margin:5px;"><div>Release : November 17, 2023</div></div></td>
+	  </tr>
+	</table>
+	</div><div align=center>
+			<div style="padding:1px;width:224px;height:310px;display:inline-block;" class=S12 align=center>
+			<div style="margin:0px 2px 0px 2px;position:relative;">
+			<table width=220 height=307 border=0 cellspacing=0 cellpadding=0 style="border-radius:10px;background:black;border:1px black solid;">
+			  <tr>
+				<td align=center valign=middle>
+				  <a target=_blank href=https://www.mtgpics.com/card?ref=lci269>
+				  <img style="display:block;" src=https://www.mtgtop8.com/pics/lci/269.jpg alt="Cavern of Souls - The Lost Caverns of Ixalan">
+				  </a>
+				</td>
+			  </tr>
+			</table>
+			</div>
+			</div>
+			<div style="padding:1px;width:224px;height:310px;display:inline-block;" class=S12 align=center>
+			<div style="margin:0px 2px 0px 2px;position:relative;">
+			<table width=220 height=307 border=0 cellspacing=0 cellpadding=0 style="border-radius:10px;background:black;border:1px black solid;">
+			  <tr>
+				<td align=center valign=middle>
+				  <a target=_blank href=https://www.mtgpics.com/card?ref=lci026>
+				  <img style="display:block;" src=https://www.mtgtop8.com/pics/lci/026.jpg alt="Ojer Taq, Deepest Foundation - The Lost Caverns of Ixalan">
+				  </a>
+				</td>
+			  </tr>
+			</table>
+			</div>
+			</div>
+			<div style="padding:1px;width:224px;height:310px;display:inline-block;" class=S12 align=center>
+			<div style="margin:0px 2px 0px 2px;position:relative;">
+			<table width=220 height=307 border=0 cellspacing=0 cellpadding=0 style="border-radius:10px;background:black;border:1px black solid;">
+			  <tr>
+				<td align=center valign=middle>
+				  <a target=_blank href=https://www.mtgpics.com/card?ref=lci185>
+				  <img style="display:block;" src=https://www.mtgtop8.com/pics/lci/185.jpg alt="Ghalta, Stampede Tyrant - The Lost Caverns of Ixalan">
+				  </a>
+				</td>
+			  </tr>
+			</table>
+			</div>
+			</div>
+			<div style="padding:1px;width:224px;height:310px;display:inline-block;" class=S12 align=center>
+			<div style="margin:0px 2px 0px 2px;position:relative;">
+			<table width=220 height=307 border=0 cellspacing=0 cellpadding=0 style="border-radius:10px;background:black;border:1px black solid;">
+			  <tr>
+				<td align=center valign=middle>
+				  <a target=_blank href=https://www.mtgpics.com/card?ref=lci249>
+				  <img style="display:block;" src=https://www.mtgtop8.com/pics/lci/249.jpg alt="Chimil, the Inner Sun - The Lost Caverns of Ixalan">
+				  </a>
+				</td>
+			  </tr>
+			</table>
+			</div>
+			</div>
+			<div style="padding:1px;width:224px;height:310px;display:inline-block;" class=S12 align=center>
+			<div style="margin:0px 2px 0px 2px;position:relative;">
+			<table width=220 height=307 border=0 cellspacing=0 cellpadding=0 style="border-radius:10px;background:black;border:1px black solid;">
+			  <tr>
+				<td align=center valign=middle>
+				  <a target=_blank href=https://www.mtgpics.com/card?ref=lci134>
+				  <img style="display:block;" src=https://www.mtgtop8.com/pics/lci/134.jpg alt="Bonehoard Dracosaur - The Lost Caverns of Ixalan">
+				  </a>
+				</td>
+			  </tr>
+			</table>
+			</div>
+			</div>
+			<div style="padding:1px;width:224px;height:310px;display:inline-block;" class=S12 align=center>
+			<div style="margin:0px 2px 0px 2px;position:relative;">
+			<table width=220 height=307 border=0 cellspacing=0 cellpadding=0 style="border-radius:10px;background:black;border:1px black solid;">
+			  <tr>
+				<td align=center valign=middle>
+				  <a target=_blank href=https://www.mtgpics.com/card?ref=lci212>
+				  <img style="display:block;" src=https://www.mtgtop8.com/pics/lci/212.jpg alt="The Skullspore Nexus - The Lost Caverns of Ixalan">
+				  </a>
+				</td>
+			  </tr>
+			</table>
+			</div>
+			</div></div></td>  
+  </tr>
+</table>
+<div class=w_title style="margin-top:20px;">
+<div align=center>
+<a class=white href=/privacy>Privacy Policy</a>
+
+<div style="padding:5px;" valign=top class=W10 align=center>
+The information presented on this site about Magic: The Gathering, both literal and graphical, is copyrighted by Wizards of the Coast.
+This website is not produced, endorsed, supported, or affiliated with Wizards of the Coast..
+<div class=c_tl></div><div class=c_tr></div><div class=c_bl></div><div class=c_br></div>
+</div>
+</div>
+</div>
+
+<div id=tag_box style="display:none;"></div>
+<div id=cookie_window class=cookie_banner >
+<div class=S16 style="flex-basis:80%;">
+This site uses cookies for analytics, ads and personalized content. By continuing to browse this site, you agree to this use as described in our <a class=white href=/privacy>Privacy Policy</a> in detail.
+  </div>
+<div class=S16 style="flex-basis:20%;" class=S16><button style="width:80px;font-size : 16px;" onclick="CookieOK();">OK</button></div>
+</div>
+<script>
+
+function CookieOK(){
+  document.getElementById("cookie_window").style.display="none";
+  setCookie("cookieSeen","shown",60);
+  //TagOK();
+}
+
+function setCookie(name,value,days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days*24*60*60*1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+   
+    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+		
+}
+
+
+</script></div>
+	</div></body>
+	</html>
