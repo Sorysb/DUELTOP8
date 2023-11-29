@@ -1,0 +1,212 @@
+BODY { margin: 0px 0px; background: #ffffff; font: 12px "Verdana";}
+TABLE, TD { color: #333333; font: 12px "Verdana"; }
+
+
+object.noevent {pointer-events: none;}
+
+
+
+A { color: #00528b;  text-decoration: none;} 
+//A:hover { color: #00528b; text-decoration: underline; }
+
+A.player_big { color: #dddddd; text-decoration: none;} 
+
+A.player { color: #666666; text-decoration: none;} 
+A:hover.player {color: #666666; text-decoration: underline; }
+
+A.und { color: #000000; text-decoration: none; } 
+A:hover.und {color: #000000; text-decoration: underline; }
+A.poster {color: #666666; text-decoration: none; } 
+A:hover.poster {color: #666666; text-decoration: underline; }
+A.topic {color: #ffffff; text-decoration: none; } 
+A:hover.topic {color: #ffffff; text-decoration: underline; }
+A.white { color: #ffffff; text-decoration: none; } 
+A:hover.white { color: #ffffff; text-decoration: underline; }
+
+A.arrow { color: #ffdd33; text-decoration: none; } 
+
+A.menu_item{font-family: "Arial Black", "AvenirNext-Heavy", Gadget, sans-serif;font-size: 18px; padding:0px 4px 0px 4px;color: #00528b;cursor:pointer;transition: all .2s; }
+A:hover.menu_item {font-family: "Arial Black", "AvenirNext-Heavy", Gadget, sans-serif;font-size: 18px;padding:0px 4px 0px 4px;color: #cccccc;cursor:pointer;transition: all .2s;}
+A.menu_item_14 {font-family: "Arial Black", "AvenirNext-Heavy", Gadget, sans-serif;font-size: 14px; padding:0px 4px 0px 4px;color: #00528b;cursor:pointer;transition: all .2s; }
+A:hover.menu_item_14 {font-family: "Arial Black", "AvenirNext-Heavy", Gadget, sans-serif;font-size: 14px;padding:0px 4px 0px 4px;color: #cccccc;cursor:pointer;transition: all .2s;}
+
+.menu_item_chosen {font-family: "Arial Black", "AvenirNext-Heavy", Gadget, sans-serif;font-size: 18px;padding:0px 4px 0px 4px;position:relative;color:#00528b;background:#ffdd33;}
+.menu_item_chosen_14 {font-family: "Arial Black", "AvenirNext-Heavy", Gadget, sans-serif;font-size: 14px;padding:0px 4px 0px 4px;position:relative;color:#00528b;background:#ffdd33;}
+
+.meta_arch {font-family: "Arial Black", "AvenirNext-Heavy", Gadget, sans-serif;font-size: 16px;color: black;}
+.event_title {font-family: "Arial Black", "AvenirNext-Heavy", Gadget, sans-serif;font-size: 18px;}
+.most_perc {font-family: "Arial Black", "AvenirNext-Heavy", Gadget, sans-serif;font-size: 20px;color: #ffdd33;text-shadow: black 1px 1px 2px, black 1px -1px 2px, black -1px 1px 2px, black -1px -1px 2px;}
+.deck_line {font: 14px "Verdana" ;margin-top:3px;padding:2px 0px 2px 5px;cursor:pointer;}
+
+.SA14 			{ font: 14px "Trebuchet MS" ;font-weight:bold; }
+.WA14 			{ font: 14px "Trebuchet MS" ; color: #ffffff;}
+
+.S20 			{ font: 20px "Verdana" ; }
+.S18 			{ font: 18px "Verdana" ; }
+.S16 			{ font: 16px "Verdana" ; }
+.S14 			{ font: 14px "Verdana" ; }
+.S13 			{ font: 13px "Verdana" ; color: #000000; }
+.S12			{ font: 12px "Verdana" ; }
+.S11			{ font: 11px "Verdana" ; }
+.S10 			{ font: 10px "Verdana" ; }
+.S10b 			{ font: 10px "Verdana" ; font-weight:bold;}
+.S9		{ font: 9px "Verdana" ; }
+.S8		{ font: 8px "Verdana" ; }
+
+.W10 			{ font: 10px "Verdana" ; color: #ffffff; }
+.W10b 			{ font: 10px "Verdana" ; color: #ffffff; font-weight:bold;}
+.W11 			{ font: 11px "Verdana" ; color: #ffffff; }
+.W12 			{ font: 12px "Verdana" ; color: #ffffff; }
+.W13 			{ font: 13px "Verdana" ; color: #ffffff; }
+.W14 			{ font: 14px "Verdana" ; color: #ffffff; }
+.W16 			{ font: 16px "Verdana" ; color: #ffffff; }
+.W18 			{ font: 18px "Verdana" ; color: #ffffff; }
+.W20 			{ font: 20px "Verdana" ; color: #ffffff; }
+
+.B10 			{ font: 10px "Verdana" ; color: #10234C; }
+.B11 			{ font: 11px "Verdana" ; color: #10234C; }
+.B12 			{ font: 12px "Verdana" ; color: #10234C; }
+.B13 			{ font: 13px "Verdana" ; color: #10234C; }
+.B14 			{ font: 14px "Verdana" ; color: #10234C; }
+
+.L12 			{ font: 12px "Verdana" ; color: #00528b;cursor:pointer;}
+.L14 			{ font: 14px "Verdana" ; color: #00528b;cursor:pointer;}
+.L20 			{ font: 20px "Verdana" ; color: #00528b; }
+
+.Blue11 			{ font: 11px "Verdana" ; color: #0000ff; }
+
+.G10 			{ font: 10px "Verdana" ; color: #666666; }
+.lG10 			{ font: 10px "Verdana" ; color: #aaaaaa; }
+.G11			{ font: 11px "Verdana" ; color: #666666; }
+.G12 			{ font: 12px "Verdana" ; color: #666666; }
+.G13 			{ font: 13px "Verdana" ; color: #666666; }
+.G14 			{ font: 14px "Verdana" ; color: #666666; }
+.G16 			{ font: 16px "Verdana" ; color: #666666; }
+.G18 			{ font: 18px "Verdana" ; color: #666666; }
+.G20  		{ font: 20px "Verdana" ; color: #666666; }
+
+.O10 			{ font: 10px "Verdana" ; color: #ddaa00; }
+.O11 			{ font: 11px "Verdana" ; color: #ddaa00; }
+.O12 			{ font: 12px "Verdana" ; color: #ddaa00; }
+.O13			{ font: 13px "Verdana" ; color: #ddaa00; }
+.O14 			{ font: 14px "Verdana" ; color: #ddaa00; }
+.O16 			{ font: 16px "Verdana" ; color: #ddaa00; }
+
+.R10 			{ font: 10px "Verdana" ; color: #dd3300; }
+.R11 			{ font: 11px "Verdana" ; color: #dd3300; }
+.R12 			{ font: 12px "Verdana" ; color: #dd3300; }
+.R13			{ font: 13px "Verdana" ; color: #dd3300; }
+.R14 			{ font: 14px "Verdana" ; color: #dd3300; }
+
+.V10 			{ font: 10px "Verdana" ; color: #009900; }
+.V11			{ font: 11px "Verdana" ; color: #009900; }
+.V12 			{ font: 12px "Verdana" ; color: #009900; }
+.V14 			{ font: 14px "Verdana" ; color: #009900; }
+
+.c_tl, .c_tr, .c_bl, .c_br {position:absolute;width:3px;}
+.c_tl {content:url(/graph/ctl.png);top:0px;left:0px;}
+.c_tr {content:url(/graph/ctr.png);top:0px;right:0px;}
+.c_bl {content:url(/graph/cbl.png);bottom:0px;left:0px;}
+.c_br {content:url(/graph/cbr.png);bottom:0px;right:0px;}
+
+.new 			{ font: 10px "Verdana" ; color:red; background:#ffdd33;padding:1px 2px 1px 2px;font-weight: bold;border-radius:3px;}
+
+.golden		{ font: 16px "Verdana"; color: #ffcc00;text-shadow: 1px 1px #8f7715;}
+
+.img_sep {display:block;width:100%;height:1px;}
+
+.w_title {position:relative;background: linear-gradient(rgba(93,124,147,1) 0%, rgba(0,82,139,1) 40%, rgba(0,82,139,1) 100% );padding:5px 0px 5px 0px;font-family: "Arial Black", "AvenirNext-Heavy", Gadget, sans-serif;font-size: 14px; color: white;}
+.w_title_biz {background:#ffcc00;padding:2px 0px 2px 0px;font: 16px "Verdana" ; color: #000000;border: 1px #00528b solid;border-radius: 5px;}
+.w_title_biz_off {background:#cccccc;padding:2px 0px 2px 0px;font: 16px "Verdana" ; color: #000000;border: 1px #00528b solid;border-radius: 5px;}
+.navy_box {background:#00528b;font: 16px "Verdana" ; color: #ffffff;border-radius: 5px;}
+
+.cookie_banner {
+  position: fixed;
+  top: 300px;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  padding: 50px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fdfdfd; 
+  background-color: #00528b;
+  
+  border-radius: 5px;
+  border:2px black solid;
+}
+
+.page {padding-top:5px;min-height:600px;padding-bottom:5px;}
+
+.Stable {border-spacing:0px;}
+
+.Stable td{padding: 2px;}
+
+.chosen_tr {background:#ffdd33;}
+.hover_tr {background:white;transition: all 0.2s;}
+.hover_tr:hover {background:#eeeeee;transition: all 0.2s;}
+
+.Nav_link {font-family: "Arial Black", "AvenirNext-Heavy", Gadget, sans-serif;font-size: 12px;transition: all .2s; margin: 0px 2px 0px 2px;}
+.Nav_link:hover{background-color:#cccccc;}
+.Nav_buy {cursor:pointer;padding:2px;margin: 0px 2px 2px 2px;background:#333333;color:white;cursor:pointer;position:relative;}
+.Nav_buy:hover{color:#ffdd33;}
+.Nav_nolink {border:1px gray solid;text-align:center;padding:2px;border-radius: 5px;margin: 0px 2px 0px 2px;}
+.Nav_buy_price {display:inline-block;background:white;padding:2px;color:black;}
+.Shop_title {display:inline-block;font-family: "Arial Black", "AvenirNext-Heavy", Gadget, sans-serif;font-size: 12px; padding:0px 4px 0px 4px;transition: all .2s; } 
+
+.Nav_norm {padding:1px 4px 1px 4px;border:1px #999999 solid;cursor:pointer;text-align:center;border-radius: 3px;margin:0px 5px 0px 5px;}
+.Nav_norm:hover{background:#eeeeee;transition: all 0.2s;}
+    
+
+.Nav_cur {padding:1px 4px 1px 4px;border:1px gray solid;background:#ffdd33;color:#00528b;text-align:center;border-radius: 3px;margin:0px 5px 0px 5px;}
+.Nav_PN { width:50px;border:1px gray solid;cursor:pointer;text-align:center;border-radius: 5px;}
+.Nav_PN:hover{background-color:#cccccc;}
+.Nav_PN_no {padding:1px 4px 1px 4px;border:1px gray solid;background:white;color:#999999;text-align:center;border-radius: 3px;margin:0px 5px 0px 5px;}
+
+
+
+.news_title {font: 28px "NASDAQER" ; color: #000000;}
+.news_title_big {font: 40px "Arial" ; color: #ffffff;font-weight: bold;}
+
+
+//.c_box {width:120px;position:absolute;top:-70px;left:10px;background:white;border:1px #00528b solid;padding:1px;}
+.c_box {width:140px;position:absolute;top:-63px;left:2px;}
+.c {width:40px;height:16px;background:#ffffff;border:1px #272727 solid;text-align:center}
+.c1 {width:250px;height:16px;background:#ffffff;}
+.c2 {width:210px;margin-left:5px;padding:1px;float:left;overflow:hidden;cursor:pointer;}
+.c1:hover{background-color:#cccccc;}
+
+
+.Stablecard	 {background:rgba(255,255,255,0.95);border:2px #272727 solid;border-radius: 5px;}
+.Stablenew	 {background:rgba(0,0,0,0.9);border:2px #272727 solid;}
+.Sheader	 {background:#2c9bb7;width:100%;height:30px;}
+.page_nav {border: none; background-color: transparent;}
+
+.card_box_med, .card_box_med_180Y, .card_box_med_180Ya {
+  position:absolute;
+  width:220px;
+  height:307px;
+  transition: all .5s;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card_box_med_180Y {transform: rotateY(180deg);}
+.card_box_med_180Ya {transform: rotateY(-180deg);}
+
+#nav {
+	float: left;
+	border: 1px solid #CCCCCC;
+}
+#nav a {
+	text-align:right;
+	vertical-align:middle;
+	height: 33px;
+	float: right;
+	padding: 2px 15px;
+	line-height: 33px;
+}
